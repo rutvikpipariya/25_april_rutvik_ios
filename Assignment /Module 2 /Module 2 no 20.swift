@@ -11,5 +11,5 @@ if a == xa
 }
 else
 {
-    print("Try again...")
+    print("not equal")
 }
