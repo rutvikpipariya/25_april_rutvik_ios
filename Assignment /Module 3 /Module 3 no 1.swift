@@ -1,3 +1,4 @@
+//Write a program to modify value from specific position from an array.
 var value = [1, 2, 9, 4, 5]
 func kaiknavu(at jagya: Int, with navukaik: Int, in array: inout [Int]) 
 {
