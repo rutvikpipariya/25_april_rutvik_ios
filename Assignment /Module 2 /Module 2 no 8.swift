@@ -1,10 +1,10 @@
 import Foundation
 print("Enter first number :")
-var a = Float(readLine()!)! 
+var a = Float(readLine()!)!
 print("Enter second number :")
 var b = Float(readLine()!)!
 func add(){
-let addition = a + b 
+let addition = a + b
 print("Addition of A and B : \(addition)")
 }
 func minus(){
