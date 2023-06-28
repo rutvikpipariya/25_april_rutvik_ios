@@ -1,51 +1,29 @@
-import Foundation
-print("Enter first number :")
-var a = Float(readLine()!)!
-print("Enter second number :")
-var b = Float(readLine()!)!
-func add(){
-let addition = a + b
-print("Addition of A and B : \(addition)")
+var no1:Int? , no2:Int?,choice:Int?
+
+print("Enter Your Number1:")
+no1=Int(readLine()!)!
+
+print("Enter Your Number2:")
+no2=Int(readLine()!)!
+
+print("Enter Your Choice:")
+choice=Int(readLine()!)!
+
+switch choice
+{
+   case 1:
+   print("sum:\(no1!+no2!) ")
+    
+  case 2:
+  print("sub:\(no1!-no2!)")
+    
+  case 3:
+  print("mul:\(no1!*no2!)")
+    
+  case 4:
+  print("div:\(no1!/no2!)")
+    
+  default:
+    print("wrong choice......try agian")
+    
 }
-func minus(){
-let subtraction = a - b
-print("Subtraction of A and B :\(subtraction)")
-}
-func into(){
-let multiplication = a * b
-print("Multiplication of A and B : \(multiplication)")
-}
-func divide(){
-let division = a / b
-print("Division of A and B : \(division)")
-}
-func perform() {
-    print("--- Arithmetic Operations ---")
-    print("1. Addition")
-    print("2. Subtraction")
-    print("3. Multiplication")
-    print("4. Division")
-    print("5. Exit")
-    if let choice = Int(readLine()!) {
-        switch choice {
-        case 1:
-            add()
-        case 2:
-            minus()
-        case 3:
-            into()
-        case 4:
-            divide()
-        case 5:
-            print("Exiting...")
-            return
-        default:
-            print("Invalid choice. Please try again.")
-        }
-    } else {
-        print("Invalid choice. Please try again.")
-    }
-    print("\n")
-    perform()
-}
-perform()
