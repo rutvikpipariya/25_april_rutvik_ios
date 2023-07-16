@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var datePicker: UIDatePicker!
-    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var Label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -18,37 +18,14 @@ class ViewController: UIViewController {
     }
 
 
-    @objc func datePickerValueChanged(_ sender: UIDatePicker) {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .medium
-        dateFormatter.timeStyle = .none
-        let selectedDate = sender.date
-        let dateString = dateFormatter.string(from: selectedDate)
-        dateLabel.text = dateString
+    @objc func pickdate(_ sender: UIDatePicker) {
+        let date = DateFormatter()
+        date.dateStyle = .medium
+        date.timeStyle = .none
+        let dateSelect = sender.date
+        let dateString = date.string(from: dateSelect)
+        Label.text = dateString
     }
 
 }
 
-/*
- import UIKit
-
- class ViewController: UIViewController {
-
-     @IBOutlet weak var datePicker: UIDatePicker!
-     @IBOutlet weak var dateLabel: UILabel!
-
-     override func viewDidLoad() {
-         super.viewDidLoad()
-         datePicker.addTarget(self, action: #selector(datePickerValueChanged(_:)), for: .valueChanged)
-     }
-
-     @objc func datePickerValueChanged(_ sender: UIDatePicker) {
-         let dateFormatter = DateFormatter()
-         dateFormatter.dateStyle = .medium
-         dateFormatter.timeStyle = .none
-         let selectedDate = sender.date
-         let dateString = dateFormatter.string(from: selectedDate)
-         dateLabel.text = dateString
-     }
- }
- */
