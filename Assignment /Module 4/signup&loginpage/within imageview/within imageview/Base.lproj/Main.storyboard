@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="within_imageview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NvF-bO-nBA">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="NvF-bO-nBA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3Ne-WI-2YU"/>
+                            <constraint firstItem="NvF-bO-nBA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6dX-gN-VnL"/>
+                            <constraint firstItem="NvF-bO-nBA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8DL-7y-qbO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NvF-bO-nBA" secondAttribute="bottom" id="9NJ-ne-1eE"/>
+                            <constraint firstItem="NvF-bO-nBA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9WQ-F6-Rvh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NvF-bO-nBA" secondAttribute="trailing" id="Fdq-3T-aeT"/>
+                            <constraint firstItem="NvF-bO-nBA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PJK-Mp-Zrs"/>
+                            <constraint firstItem="NvF-bO-nBA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cRN-uJ-Ra0"/>
+                            <constraint firstItem="NvF-bO-nBA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="g8a-aj-Zob"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="145" y="20"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
