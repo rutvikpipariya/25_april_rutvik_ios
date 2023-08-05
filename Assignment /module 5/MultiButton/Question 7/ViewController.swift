@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  Question 7
-//
-//  Created by mac on 20/02/23.
-//  Copyright © 2023 mac. All rights reserved.
-//
 
 import UIKit
 
