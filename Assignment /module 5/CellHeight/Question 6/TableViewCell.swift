@@ -1,10 +1,4 @@
-//
-//  TableViewCell.swift
-//  Question 6
-//
-//  Created by mac on 01/03/23.
-//  Copyright © 2023 mac. All rights reserved.
-//
+
 
 import UIKit
 
