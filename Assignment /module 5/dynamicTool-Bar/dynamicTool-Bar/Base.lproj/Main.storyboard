@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="dynamicTool_Bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="60R-zA-XCU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="672"/>
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9nf-vJ-mSR">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <items>
+                                            <navigationItem title="Dynamic" id="lgZ-Se-uPd">
+                                                <barButtonItem key="leftBarButtonItem" style="plain" systemItem="action" id="6zN-Uk-mwM">
+                                                    <connections>
+                                                        <action selector="button1:" destination="BYZ-38-t0r" id="K5A-dl-O23"/>
+                                                    </connections>
+                                                </barButtonItem>
+                                                <barButtonItem key="rightBarButtonItem" style="plain" systemItem="camera" id="SQ2-jW-Eeu">
+                                                    <connections>
+                                                        <action selector="button2:" destination="BYZ-38-t0r" id="w3a-9Q-q9p"/>
+                                                    </connections>
+                                                </barButtonItem>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MHx-gi-oQS">
+                                        <rect key="frame" x="0.0" y="623" width="375" height="49"/>
+                                        <items>
+                                            <barButtonItem systemItem="add" id="Tle-fo-ZDl">
+                                                <connections>
+                                                    <action selector="button3:" destination="BYZ-38-t0r" id="PTJ-Sm-xI0"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="JSE-0T-sue"/>
+                                            <barButtonItem style="plain" systemItem="edit" id="jww-Es-vEN">
+                                                <connections>
+                                                    <action selector="button4:" destination="BYZ-38-t0r" id="qra-pT-dIN"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="SXb-cf-gnn"/>
+                                            <barButtonItem systemItem="refresh" id="nIJ-64-5Bv">
+                                                <connections>
+                                                    <action selector="button5:" destination="BYZ-38-t0r" id="Lfw-FM-bib"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </items>
+                                    </toolbar>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="MHx-gi-oQS" secondAttribute="bottom" id="G05-y1-Jlv"/>
+                                    <constraint firstAttribute="trailing" secondItem="MHx-gi-oQS" secondAttribute="trailing" id="Mf0-wC-B1j"/>
+                                    <constraint firstItem="MHx-gi-oQS" firstAttribute="leading" secondItem="60R-zA-XCU" secondAttribute="leading" id="bb4-OR-P4z"/>
+                                    <constraint firstAttribute="trailing" secondItem="9nf-vJ-mSR" secondAttribute="trailing" id="fvX-KN-vKr"/>
+                                    <constraint firstItem="9nf-vJ-mSR" firstAttribute="leading" secondItem="60R-zA-XCU" secondAttribute="leading" id="nfi-vJ-Xc6"/>
+                                    <constraint firstItem="9nf-vJ-mSR" firstAttribute="top" secondItem="60R-zA-XCU" secondAttribute="top" id="sEU-J0-olw"/>
+                                    <constraint firstItem="MHx-gi-oQS" firstAttribute="top" secondItem="9nf-vJ-mSR" secondAttribute="bottom" constant="579" id="su3-R1-ost"/>
+                                    <constraint firstAttribute="bottom" secondItem="9nf-vJ-mSR" secondAttribute="bottom" constant="623" id="x8K-2D-kP8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="60R-zA-XCU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8vK-9r-aUl"/>
+                            <constraint firstItem="60R-zA-XCU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Aq9-xE-aG4"/>
+                            <constraint firstItem="60R-zA-XCU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="iS7-iV-6g5"/>
+                            <constraint firstItem="60R-zA-XCU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qgP-Ln-7Cu"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="3.1484257871064472"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
