@@ -1,0 +1,36 @@
+Introduction And Fundamental of Swift :
+==============================================
+
+What is Swift?
+-> Swift is a compiled programming language that is general-purpose, multi-paradigm and was developed by Apple Inc. It is available for multiple OS platforms such as iOS, iPadOS, macOS,
+watchOS, tvOS, z/OS and also for Linux. Swift is primarily designed to work with Apple's Cocoa and Cocoa Touch frameworks along with a wide range of existing Objective-C code written 
+for Apple products. Built with the open source LLVM compiler framework, Swift has been an inclusion in Xcode since version 6 that was released in 2014. On Apple platforms, it makes use 
+of the Objective-C runtime library, thus allowing C, Objective-C, C++ and Swift code to run within one program. 
+
+
+Below are some concepts clear to learn Swift programming or any other programming language :-
+
+-> Variables and constants
+-> Types of Data
+-> Operators
+-> String Interpolation
+-> Arrays
+-> Dictionaries
+-> Conditional Statements
+-> Loops
+-> Switch Case 
+-> Functions
+-> Optionals
+-> Optionals Chaining
+-> Enumerations
+-> Structs
+-> Classes
+-> Properties
+-> Static Properties and Methods
+-> Access Control
+-> Polymorphism and Typecasting
+-> Closures
+-> Protocols
+-> Extensions
+-> Protocol Extension 
+-> Wrap Up
